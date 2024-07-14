@@ -1,0 +1,125 @@
+1. Write the Pseudocode to Calculate the sum of digits of the number given by user
+Eg: 456=4+5+6=15
+
+Pseudocode
+
+Input the number from the user.
+Initialize a variable sum to 0.
+While the number is greater than 0:
+Get the last digit of the number (number % 10).
+Add the last digit to sum.
+Remove the last digit from the number (number // 10).
+Output the value of sum.
+
+Algorithm
+
+Start
+Input num
+Initialize sum to 0
+While num > 0, repeat steps 5 to 7:
+digit = num % 10
+sum = sum + digit
+num = num // 10
+End While
+Output sum
+End
+Would you like a code implementation for this as well?
+-------------------------------------------------------------------
+2. Write the Pseudocode to calcualte the area of a rectangle, square and circle
+
+
+Pseudocode
+Calculate the Area of a Rectangle
+
+START
+   INPUT length, width
+   area <- length * width
+   OUTPUT area
+END
+
+Algorithm to Calculate the Area of a Rectangle
+
+Start
+Input the length of the rectangle.
+Input the width of the rectangle.
+Compute the area using the formula: area = length * width.
+Output the area.
+End
+
+Calculate the Area of a Square
+
+START
+   INPUT side
+   area <- side * side
+   OUTPUT area
+END
+
+Algorithm to Calculate the Area of a Square
+
+Start
+Input the side length of the square.
+Compute the area using the formula: area = side * side.
+Output the area.
+End
+
+Calculate the Area of a Circle
+
+START
+   INPUT radius
+   area <- 3.14 * radius * radius
+   OUTPUT area
+END
+
+Algorithm to Calculate the Area of a Circle
+
+Start
+Input the radius of the circle.
+Compute the area using the formula: area = 3.14 * radius * radius.
+Output the area.
+End
+----------------------------------------------------------------------------
+3.Write the Pseudocode to calculate the average of 5 marks accepted from user. If the average is between 75-90 print excellent, 
+60-75 print good and 45-60 pass below 45 fail
+
+Pseudocode:
+
+Start
+   Initialize sum to 0
+
+   For i from 1 to 5 do
+      Prompt user to enter mark i
+      Read mark i
+      Add mark i to sum
+   End For
+
+   Calculate average = sum / 5
+
+   If average >= 75 and average <= 90 then
+      Print "Excellent"
+   Else If average >= 60 and average < 75 then
+      Print "Good"
+   Else If average >= 45 and average < 60 then
+      Print "Pass"
+   Else
+      Print "Fail"
+   End If
+End
+
+Algorithm:
+Start
+Initialize sum to 0
+For i from 1 to 5:
+Prompt the user to enter mark i
+Read mark i
+Add mark i to sum
+Calculate average as sum / 5
+If average is between 75 and 90 (inclusive):
+Print "Excellent"
+Else if average is between 60 and 75 (exclusive):
+Print "Good"
+Else if average is between 45 and 60 (exclusive):
+Print "Pass"
+Else:
+Print "Fail"
+End
+

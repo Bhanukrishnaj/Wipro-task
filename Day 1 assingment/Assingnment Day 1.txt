@@ -1,0 +1,141 @@
+**************Wipro Day 1 Assingment**************
+--------------------------------------------------------------------
+1.   Write algorithm and pseudo code the following requirement:
+	a.   Find out simple interest calculation based on the given inputs.
+
+Algorithm
+Start
+Input the principal amount (P), rate of interest (R), and time period in years (T).
+Calculate simple interest using the formula: SI = (P * R * T) / 100
+Output the simple interest (SI).
+End
+
+Pseudo Code:
+BEGIN
+    INPUT P  
+    INPUT R  
+    INPUT T  
+    
+    SI = (P * R * T) / 100  
+    
+    OUTPUT SI  
+END
+---------------------------------------------------------------------------------------------------------
+	
+2. Write algorithm and pseudo code the following requirement:
+	
+a.  Check the given number is prime number or not 
+
+Algorithm:
+Start
+Input the number (N).
+If N <= 1, then N is not a prime number.
+For i from 2 to sqrt(N), do:
+a. If N % i == 0, then N is not a prime number.
+If no divisors are found, N is a prime number.
+Output the result.
+End
+
+Pseudo Code:
+BEGIN
+    INPUT N  // Number to check
+    
+    IF N <= 1 THEN
+        OUTPUT "Not a prime number"
+    ELSE
+        IS_PRIME = true
+        FOR i FROM 2 TO sqrt(N) DO
+            IF N % i == 0 THEN
+                IS_PRIME = false
+                BREAK
+        IF IS_PRIME THEN
+            OUTPUT "Prime number"
+        ELSE
+            OUTPUT "Not a prime number"
+END
+
+		
+b.  Display 5 multiples that are less than 100
+
+Algorithm:
+Start
+Input the number (N).
+Initialize a counter to 1.
+While (N * counter) < 100:
+a. Output (N * counter)
+b. Increment the counter by 1.
+End
+
+Pseudo Code:
+BEGIN
+    INPUT N  // Number to find multiples of
+    
+    COUNTER = 1
+    WHILE (N * COUNTER) < 100 DO
+        OUTPUT (N * COUNTER)
+        COUNTER = COUNTER + 1
+END
+
+c.   Find out how many even numbers and odd numbers  in the given array	
+
+Algorithm:
+Start
+Input the array of numbers (arr).
+Initialize counters for even (even_count) and odd (odd_count) numbers to 0.
+For each element in arr:
+a. If element is even, increment even_count.
+b. If element is odd, increment odd_count.
+Output even_count and odd_count.
+End
+
+Pseudo Code:
+BEGIN
+    INPUT arr[]  // Array of numbers
+    
+    even_count = 0
+    odd_count = 0
+    
+    FOR EACH element IN arr DO
+        IF element % 2 == 0 THEN
+            even_count = even_count + 1
+        ELSE
+            odd_count = odd_count + 1
+            
+    OUTPUT even_count
+    OUTPUT odd_count
+END
+
+----------------------------------------------------------------------------------------------------------------	
+ 
+3.  Write algorithm and pseudo code that outlines the logic for a user login process. 
+It should include conditional for successful and unsuccessful login attempts, and a loop that allows a user three attempts before locking the account.
+
+Algorithm:
+Start
+Initialize attempt counter to 0.
+While attempt counter is less than 3:
+a. Input username and password.
+b. Check if username and password are correct:
+i. If correct, output "Login successful" and exit loop.
+ii. If incorrect, increment attempt counter and output "Login failed".
+If attempt counter reaches 3, output "Account locked".
+End
+
+Pseudo Code:
+BEGIN
+    attempt = 0
+    
+    WHILE attempt < 3 DO
+        INPUT username
+        INPUT password
+        
+        IF username == "correct_username" AND password == "correct_password" THEN
+            OUTPUT "Login successful"
+            BREAK
+        ELSE
+            attempt = attempt + 1
+            OUTPUT "Login failed"
+    
+    IF attempt == 3 THEN
+        OUTPUT "Account locked"
+END
